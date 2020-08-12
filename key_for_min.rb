@@ -3,8 +3,12 @@
 
 def key_for_min_value(name_hash)
   min = 999
+  name = ""
   name_hash.each { |key, value|
     if value < min
       min = value
+      name = key
+    end
   }
+  name
 end
